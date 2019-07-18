@@ -18,6 +18,7 @@ module.exports = {
     // app. that's because this is most likely an addon docs
     // build and we need this addon enabled for our docs
     // to deploy correctly.
+    console.log(this.app.env, this.app.name);
     return this.app.name === "dummy" ||
       this.app.env === "test" || this.app.env === "development";
   },
