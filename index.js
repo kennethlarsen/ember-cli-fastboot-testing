@@ -19,7 +19,7 @@ module.exports = {
     // build and we need this addon enabled for our docs
     // to deploy correctly.
     return this.app.name === "dummy" ||
-      this.app.env !== "production";
+      this.app.env === "test" || "development";
   },
 
   included() {
